@@ -12,3 +12,5 @@ It is a way to style the code created by languages like HTML, it works as a cust
 JS<br><br>
 Is a high-level programming language, designed to run on browsers and manipulate web page behaviors.
 
+![page](https://user-images.githubusercontent.com/66041633/119184275-8f095880-ba4b-11eb-9141-0f2e1316805b.png)
+  
