@@ -1,0 +1,288 @@
+/*google fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/*basic*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+    background: #0a0a0a;
+    color: #F5F5F5;
+    overflow-x: hidden;
+    position: relative;
+}
+
+h1,
+h2 {
+    line-height: 1.1;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    width: 1160px;
+    max-width: 97%;
+    margin: 0 auto;
+}
+
+.btn {
+    font-size: .9em;
+    font-weight: 500;
+    color: #fff;
+    padding: 10px 34px;
+    border: 1px solid #fff;
+    transition-duration: .3s;
+    transition-property: background border;
+}
+
+
+/*body*/
+
+.corp {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.corp header {
+    width: 100%;
+    padding: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.corp header .logo img {
+    width: 140px;
+    cursor: pointer;
+}
+
+.corp header nav ul {
+    list-style: none;
+}
+
+.corp header nav ul li {
+    display: inline-block;
+}
+
+.corp header nav ul li a {
+    font-size: .9em;
+    font-weight: 400;
+    color: #fff;
+    margin: 0px 10px;
+    padding: 0 10px 4px 5px;
+    transition: .3s color;
+    position: relative;
+}
+
+.corp header nav ul li a:before {
+    content: "";
+    border-bottom: 2px solid #048f4b;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 102%;
+    transition: .3s right;
+}
+
+.corp header nav ul li a:hover:before {
+    right: 0%;
+}
+
+.corp header .login a:hover {
+    border: 1px solid #048f4b;
+}
+
+.corp .principal {
+    margin-top: 10vh;
+}
+
+.corp .principal .container {
+    width: 700px;
+}
+
+.corp .principal .details {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.corp .principal .details h1 {
+    font-size: 4.2em;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.corp .principal .details h1 span {
+    color: #fff;
+    animation: 5s span ease infinite;
+}
+
+@keyframes span {
+    25% {
+        color: #fff;
+    }
+    80% {
+        color: #048f4b;
+    }
+}
+
+.corp .principal .details p {
+    max-width: 530px;
+    margin: 0 auto;
+    font-size: 1.1em;
+    color: #eaeaea;
+}
+
+.corp .principal .action {
+    text-align: center;
+    margin: 2rem;
+    margin-bottom: 25px;
+}
+
+.corp .principal .action a {
+    margin: 0px 9px;
+}
+
+.corp .principal .action a.btn-pri {
+    border: 1px solid #048042;
+    background: #048042;
+}
+
+.corp .principal .action a.btn-pri:hover {
+    border: 1px solid #fff;
+    background: #048f4b;
+}
+
+.corp .principal .action a.btn-pri2 {
+    border: 1px solid #048042;
+    background: #048042;
+}
+
+.corp .principal .action a.btn-pri2:hover {
+    border: 1px solid #fff;
+    background: #048f4b;
+}
+
+.sci {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sci li {
+    list-style: none;
+}
+
+.sci li a {
+    display: inline-block;
+    filter: invert(1);
+    margin: 5px 0;
+    transform: scale(0.6);
+}
+
+
+/*media queries*/
+
+@media screen and (max-width: 770px) {
+    html {
+        overflow-y: auto;
+    }
+    .corp header nav {
+        width: 70%;
+        background: rgb(31 31 31 / 98%);
+        padding: 30px 40px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: -100%;
+        transition: .3s right;
+    }
+    .corp header .open {
+        right: 0%;
+    }
+    .corp header nav ul li {
+        display: block;
+    }
+    .corp header nav ul li a {
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+    .corp header .login {
+        margin-right: 13%;
+    }
+    .corp .principal {
+        margin-top: 1vh;
+        height: 30%;
+    }
+    .corp .principal .details h1 {
+        font-size: 3em;
+        margin-bottom: 30px;
+    }
+    .corp .principal .action {
+        margin-bottom: 35px;
+    }
+    .list {
+        width: 40px;
+        height: 30px;
+        cursor: pointer;
+        position: absolute;
+        top: 43px;
+        right: 3%;
+        z-index: 5;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        opacity: 0.8;
+    }
+    .list span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #ffffff;
+    }
+    .list span:nth-child(2) {
+        width: 70%;
+        margin: 2px 0;
+    }
+    .list span:nth-child(3) {
+        width: 40%;
+    }
+    .sci {
+        position: relative;
+        margin-top: 3rem;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        left: 0.3rem;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    img {
+        margin: 4rem;
+    }
+}
