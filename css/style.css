@@ -207,6 +207,45 @@ a {
 
 /*media queries*/
 
+@media screen and (max-width: 400px) {
+    .btn {
+        font-size: .9em;
+        font-weight: 500;
+        color: #fff;
+        padding: 10px 34px;
+        border: 1px solid #fff;
+        transition-duration: .3s;
+        transition-property: background border;
+        align-items: center;
+        justify-content: center;
+        margin-left: 130px;
+    }
+    .corp .principal .action a.btn-pri2 {
+        margin-top: 8px;
+        border: 1px solid #048042;
+        background: #048042;
+    }
+    .sci {
+        position: relative;
+        margin-top: 5rem;
+        top: 60%;
+        transform: translateY(-10%);
+        display: flex;
+        left: 0.1rem;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    img {
+        justify-content: center;
+        align-self: center;
+        margin: 10px;
+    }
+    .list {
+        margin-top: 56px;
+    }
+}
+
 @media screen and (max-width: 770px) {
     html {
         overflow-y: auto;
@@ -220,6 +259,9 @@ a {
         bottom: 0;
         right: -100%;
         transition: .3s right;
+    }
+    .logo {
+        margin-top: 20px;
     }
     .corp header .open {
         right: 0%;
@@ -274,7 +316,7 @@ a {
     .sci {
         position: relative;
         margin-top: 3rem;
-        top: 50%;
+        top: 60%;
         transform: translateY(-50%);
         display: flex;
         left: 0.3rem;
